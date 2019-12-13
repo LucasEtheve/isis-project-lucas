@@ -15,11 +15,13 @@ public class Scenario {
 
     public String nom;
     private final List<Liste_effet> effets = new LinkedList<>();
+    public Bandeau bandeau;
 
-    public Scenario(String nom, Bandeau monbandeau) {
+    public Scenario(String nom, Bandeau bandeau) {
         this.nom = nom;
+        this.bandeau = bandeau;
     }
-
+    
     public void ajouteffet(Effet effet, int repetition) {
         Liste_effet nouvelleListeEffet= new Liste_effet(this, effet, repetition);
         effets.add(nouvelleListeEffet);

@@ -21,7 +21,7 @@ public class Couleur_de_fond extends Effet {
     @Override
     public void jouerEffet(Bandeau monBandeau) {
         monBandeau.setBackground(this.color);
-        monBandeau.sleep(1000);
+        monBandeau.sleep(80);
     }
 
 }
